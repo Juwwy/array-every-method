@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array | Every method</title>
+</head>
+<body>
+    
+
+
+
+    
+    <script>
+        //Demonstrating your understanding of every method with an array
+        // Run a test on your array, if Afghanistan is present, it simply means the world is not safe else the world is safe.
+        
+        let world = ["China", "Iran", "Nigeria", "USA", "Norway", "Ghana", "Uk", "India", "Afghanista"];
+        var resultCheck = world.every(checkCountry);
+    
+        function checkCountry(element, index, array){
+            return element != "Afghanista"
+            
+    
+        }
+        
+        console.log(`${resultCheck == true ? "The world is safe" : "The world is not safe"}`);
+        
+        </script>
+    
+</body>
+</html>
